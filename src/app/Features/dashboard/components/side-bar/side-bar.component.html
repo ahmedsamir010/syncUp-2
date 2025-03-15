@@ -1,0 +1,80 @@
+<div
+  class="h-full flex flex-col justify-start items-center p-6 border-e-2 border-gray-200 bg-white shadow-lg"
+>
+  <!-- Menu Button -->
+  <button
+    class="self-start mb-8 hover:bg-gray-100 p-2 rounded-lg transition-all duration-300"
+  >
+    <i class="fa-solid fa-bars text-2xl text-violet-600"></i>
+  </button>
+
+  <!-- Logo -->
+  <div class="flex items-center space-x-2 mb-12">
+    <span class="text-4xl font-bold text-gray-800">Sync</span>
+    <svg
+      class="w-8 h-8 text-teal-500"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M5 10l7-7m0 0l7 7m-7-7v18"
+      ></path>
+    </svg>
+    <span class="text-4xl font-bold text-teal-500">Up</span>
+  </div>
+
+<!-- Navigation Items -->
+<div class="flex flex-col gap-6 w-full">
+  <div routerLink="home"  routerLinkActive="bg-gray-300"
+    class="flex gap-3 items-center justify-start p-3 rounded-lg hover:bg-violet-50 transition-all duration-300 cursor-pointer"
+  >
+    <i class="fas fa-tachometer-alt text-xl text-violet-500"></i>
+    <p class="font-semibold text-xl text-gray-700">Dashboard</p>
+  </div>
+  <div routerLink="projects"   routerLinkActive="bg-gray-300"
+
+    class="flex gap-3 items-center justify-start p-3 rounded-lg hover:bg-violet-50 transition-all duration-300 cursor-pointer"
+  >
+    <i class="fas fa-tasks text-xl text-violet-500"></i>
+    <p class="font-semibold text-xl text-gray-700">Projects</p>
+  </div>
+  <div
+  routerLink="meetings"
+  routerLinkActive="bg-gray-300"
+    class="flex gap-3 items-center justify-start p-3 rounded-lg hover:bg-violet-50 transition-all duration-300 cursor-pointer"
+  >
+    <i class="fas fa-calendar-alt text-xl text-violet-500"></i>
+    <p class="font-semibold text-xl text-gray-700">Meetings</p>
+  </div>
+  <div
+    class="flex gap-3 items-center justify-start p-3 rounded-lg hover:bg-violet-50 transition-all duration-300 cursor-pointer"
+  >
+    <i class="fas fa-comments text-xl text-violet-500"></i>
+    <p class="font-semibold text-xl text-gray-700">Chat</p>
+  </div>
+  <div
+    class="flex gap-3 items-center justify-start p-3 rounded-lg hover:bg-violet-50 transition-all duration-300 cursor-pointer"
+  >
+    <i class="fas fa-cog text-xl text-violet-500"></i>
+    <p class="font-semibold text-xl text-gray-700">Settings</p>
+  </div>
+</div>
+
+  <!-- Spacer to push content to the top and bottom -->
+  <div class="flex-grow"></div>
+
+  <!-- Footer or Additional Content -->
+  <div class="mt-8">
+    <div
+      class="flex gap-3 items-center justify-start p-3 rounded-lg hover:bg-violet-50 transition-all duration-300 cursor-pointer"
+    >
+      <i class="fa-solid fa-sign-out-alt text-xl text-violet-500"></i>
+      <p class="font-semibold text-xl text-gray-700" [routerLink]="'/login'">Logout</p>
+    </div>
+  </div>
+</div>
